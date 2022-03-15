@@ -86,21 +86,21 @@ ul li:hover{
 }
 
 .composerFestImage {
-    background-image: url('../Images/22CompFest\ .png');
+    background-image: url('22CompFest.png');
     height: 125%;
     background-size: 350px;
     background-repeat: no-repeat;
 }
 
 .critGroupImage {
-    background-image: url('../Images/critGroup.png');
+    background-image: url('critGroup.png');
     height: 125%;
     background-size: 350px;
     background-repeat: no-repeat;
 }
 
 .projectPropImage {
-    background-image: url('../Images/projectProp.png');
+    background-image: url('Images/projectProp.png');
     height: 125%;
     background-size: 350px;
     background-repeat: no-repeat;
@@ -236,8 +236,7 @@ a:hover {
     grid-area:project;
 }
 
-@media only screen and (max-width: 800px){
-    .background{background-color: #8CA5FF;} 
+@media only screen and (max-width: 800px){ 
     .workGrid{
         grid-template-rows: minmax(0, 1fr 1fr 1fr);
         grid-template-columns: none;
