@@ -86,21 +86,21 @@ ul li:hover{
 }
 
 .composerFestImage {
-    background-image: url('Images/22CompFest.png');
+    background-image: url('../Images/22CompFest.png');
     height: 125%;
     background-size: 350px;
     background-repeat: no-repeat;
 }
 
 .critGroupImage {
-    background-image: url('Images/critGroup.png');
+    background-image: url('../Images/critGroup.png');
     height: 125%;
     background-size: 350px;
     background-repeat: no-repeat;
 }
 
 .projectPropImage {
-    background-image: url('Images/projectProp.png');
+    background-image: url('../Images/projectProp.png');
     height: 125%;
     background-size: 350px;
     background-repeat: no-repeat;
