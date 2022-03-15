@@ -36,6 +36,42 @@ ul li:hover{
     text-decoration-color: #FFC411;
 }
 
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.homeButton{
+    background-color: black;
+    border-color: black;
+    color: #f2f2f2;
+    width: 40%;
+    margin-top: 2%;
+    margin-inline-end: 3%;
+    margin-inline-start: 3%;
+    display: inline;
+}
+
+.flexContainer h1 {
+    background-image: linear-gradient(#ffffff 50%, #ffffff 50%, #F6C547 50%, #F6C547 50%);
+    margin: 0%;
+    padding-left: 5%;
+}
+
+.flexContainer h2{
+    font-weight: 100;
+    font-size: medium;
+    background-color: #F6C547;
+}
+
+.homeHero{
+    padding-bottom: 5%;
+}
+.background{
+    background-color: #F6C547;
+    padding-left: 5%;
+}
+
 .contentArea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -114,7 +150,8 @@ cursor: pointer;
 .hero {
     background-color: black;
     margin: 0;
-    padding: 2%
+    padding: 2%;
+    margin-top: 10%;
 }
 
 .hero h1 {
@@ -138,6 +175,7 @@ cursor: pointer;
 .footer li {
     color: #f2f2f2;
     font-size: small;
+    text-align: center;
 }
 
 .footerLogos {
@@ -157,6 +195,90 @@ a:hover {
 .footer nav{
     float: left;
 }
-.footer li{
-    text-align: center;
+
+.bio{
+    display: flex;
+    align-items: center;
+}
+
+.homeText{
+    padding: 2%;
+    margin: 2%;
+}
+
+.homeImage {
+    width: 50%;
+    padding: 2%;
+ }
+
+.homeHeroImage{
+    width: 100%;
+}
+
+.workGrid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr 1fr 1fr);
+        grid-template-areas: 'festival crit project';
+        column-gap: 5%;
+        margin-bottom: 20%;
+        column-width: 30%;
+ }
+
+.festival{
+    grid-area:festival;
+}
+
+.crit{
+    grid-area:crit;
+}
+
+.project{
+    grid-area:project;
+}
+
+@media only screen and (max-width: 800px){
+    .background{background-color: #8CA5FF;} 
+    .workGrid{
+        grid-template-rows: minmax(0, 1fr 1fr 1fr);
+        grid-template-columns: none;
+        grid-template-areas: 
+        "festival"
+        "crit"
+        "project";
+        row-gap: 60%;
+        margin-left: 2%;
+    }
+    .workGrid p {
+        font-size: small;
+    }
+
+    .composerFestImage{
+        height: 150%;
+        width: auto;
+        background-repeat: no-repeat;
+    }
+    .critGroupImage{
+        height: 150%;
+        width: auto;
+        background-repeat: no-repeat;
+    }
+
+    .projectPropImage{
+        height: 150%;
+        width: auto;
+        background-repeat: no-repeat;
+    }
+
+    .flexContainer{flex-direction: column; width: 100%;}
+    .homeImage {
+        display: inline-flex;
+    }
+    .homeText{
+        display: inline-flex;
+        font-size: small;
+    }
+
+    .hero {
+        margin-top: 115%;
+    }
 }
